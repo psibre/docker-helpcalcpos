@@ -1,0 +1,6 @@
+version: '3'
+services:
+  helpcalcpos:
+    image: psibre/helpcalcpos
+    environment:
+      - CLIENT=${CLIENT}
