@@ -42,6 +42,11 @@ $ CLIENT=[CLIENT] docker-compose up --scale helpcalcpos=[N]
 ```
 where `[CLIENT]` is the hostname of the machine that will be running the CalcPos GUI client, and `[N]` is the number of services you want to spawn. For example, on a Docker host with 16 multi-threaded CPUs, you could set this number to 32.
 
+On **older versions of `docker-compose`**, run
+```
+$ CLIENT=[CLIENT] docker-compose scale helpcalcpos=[N]
+```
+
 ### Example
 
 ```
